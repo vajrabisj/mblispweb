@@ -9,6 +9,7 @@
                "cl-ppcre"
                "uiop"
                "cl-store"
+               "cl-markup"
 
                ;; for @route annotation
                "cl-syntax-annot"
