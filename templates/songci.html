@@ -1,0 +1,11 @@
+{% extends "layouts/default.html" %}
+{% block title %}宋词查询汇总——{{ word }}{% endblock %}
+{% block content %}
+<div id="main">
+  <ul>
+  {% for c in ci %}
+    <li>{{ c }}<br><br></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}
