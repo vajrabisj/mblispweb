@@ -1027,11 +1027,11 @@
         when (string= (cdadr s) auth)
         collect (cdar s) into sresult
         finally (return sresult)))
-(import 'cl-markup:xhtml)
-(defroute "/songci/byname/:name" (&key name)
-  (cl-markup:xhtml
-   (:head (:title (format nil "宋词汇总——~a" name)))
-   (:body (format nil "~{~a~}" (cibyauth name)))))
+;;(import 'cl-markup:xhtml)
+;;(defroute "/songci/byname/:name" (&key name)
+  ;;(cl-markup:xhtml
+   ;;(:head (:title (format nil "宋词汇总——~a" name)))
+   ;;(:body (format nil "~{~a~}" (cibyauth name)))))
 
 (import 'mblispweb.view:render)
 (defroute "/songci/name/:name" (&key name)
@@ -1044,11 +1044,11 @@
               when (search wd c)
               collect (format nil "~a~%~10@a~a~3@a~a~%~%" c "——" (cdadr l) " " (cdaddr l)) into sresult
               finally (return sresult))))
-(import 'cl-markup:xhtml)
-(defroute "/songci/byword/:word" (&key word)
-  (cl-markup:xhtml
-   (:head (:title (format nil "宋词汇总——~a" word)))
-   (:body (format nil "~{~a~}" (byword word)))))
+;;(import 'cl-markup:xhtml)
+;;(defroute "/songci/byword/:word" (&key word)
+  ;;(cl-markup:xhtml
+   ;;(:head (:title (format nil "宋词汇总——~a" word)))
+   ;;(:body (format nil "~{~a~}" (byword word)))))
 
 (import 'mblispweb.view:render)
 (defroute "/songci/word/:word" (&key word)
