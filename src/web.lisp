@@ -30,7 +30,7 @@
   (render #P"index.html"
           (list :name (format nil "你好，~a！欢迎回来！" name))))
 
-(defparameter songci (cl-store:restore #P"songci.txt"))
+(defparameter songci (cl-store:restore #P"songciall.html"))
 ;;;(defparameter sresult nil)
 (defun cibyauth (auth)
   (loop for s in songci
