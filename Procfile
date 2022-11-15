@@ -1,1 +1,1 @@
-web: sbcl --script app.lisp
+web: sbcl --script appstart.lisp

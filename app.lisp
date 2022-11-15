@@ -37,4 +37,3 @@
          (let ((datafly:*trace-sql* t))
            (funcall app env)))))
  *web*)
-(mblispweb:start :port 8080)
