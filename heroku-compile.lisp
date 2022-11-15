@@ -1,2 +1,2 @@
 (require-quicklisp)
-(ql:quickload :my-system)
+(ql:quickload :mblispweb)
