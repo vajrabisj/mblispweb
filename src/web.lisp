@@ -1,7 +1,6 @@
 (in-package :cl-user)
 (defpackage mblispweb.web
   (:use :cl
-        :cl-store
         :caveman2
         :mblispweb.config
         :mblispweb.view
