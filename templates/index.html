@@ -1,8 +1,10 @@
 {% extends "layouts/default.html" %}
-{% block title %}Welcome to Caveman2{% endblock %}
+{% block title %}Welcome to Vajra's Lisp Webserver{% endblock %}
 {% block content %}
 <div id="main">
-  Welcome to <a href="http://8arrow.org/caveman/">Caveman2</a>!
-  <p>{{ name }}</p>
+  <h>I Ching - The Wisdom of Changes<br><br><br></h>
+  {% for g in gua %}
+    <p>No.{{ g | first | add:-19903 }}: {{ g | lisp: cdr }}<br><br></p>
+  {% endfor %}
 </div>
 {% endblock %}
